@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 
-ENUM(BlueprintType)
+UENUM(BlueprintType)
 enum class EPWAbilityInputID : uint8
 {
 	// 0 None

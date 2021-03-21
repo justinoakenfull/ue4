@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "AbilitySystemInterface.h"
 #include "Parawow_InvasionsCharacter.generated.h"
 
 UCLASS(config=Game)
-class AParawow_InvasionsCharacter : public ACharacter, public IAbilitySystemInterface
+class AParawow_InvasionsCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -28,6 +29,7 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
 
 protected:
 
